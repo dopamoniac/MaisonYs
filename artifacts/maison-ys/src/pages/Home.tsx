@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import heroDesktopImg from "@assets/abc.jpeg";
-import heroMobileImg from "@assets/abc-mobile.jpeg";
+import heroMobileImg from "@assets/abc-mobile.png";
 import { baccaratGiftImg, productImages } from "@/lib/images";
 import { fragrances, collections } from "@/lib/data";
 
