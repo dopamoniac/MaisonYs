@@ -20,7 +20,7 @@ export default function Maison() {
           className="absolute inset-0"
         >
           <div className="absolute inset-0 bg-obsidian/50 z-10" />
-          <img src={coverImg} alt="Maison YS" className="w-full h-full object-cover" />
+          <img src={coverImg} alt="Maison YS" className="w-full h-full object-contain scale-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-stone/30 via-transparent to-transparent z-10" />
         </motion.div>
 

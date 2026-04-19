@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { coverImg, baccaratGiftImg, productImages } from "@/lib/images";
+import heroDesktopImg from "@assets/abc.jpeg";
+import heroMobileImg from "@assets/abc-mobile.jpeg";
+import { baccaratGiftImg, productImages } from "@/lib/images";
 import { fragrances, collections } from "@/lib/data";
 
 const fadeUp = {
@@ -28,10 +30,9 @@ export default function Home() {
 
       {/* ── MOBILE HERO (below md) ── */}
       <section className="md:hidden relative min-h-[100dvh] w-full overflow-hidden bg-[#080706] flex flex-col">
-        {/* Subtle background texture */}
         <div className="absolute inset-0 z-0">
           <img
-            src={coverImg}
+            src={heroMobileImg}
             alt=""
             className="w-full h-full object-cover opacity-10 scale-110"
             style={{ objectPosition: "center center" }}
@@ -39,7 +40,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/60 via-[#080706]/30 to-[#080706]" />
         </div>
 
-        {/* Text content block — upper 55% */}
         <div className="relative z-20 flex flex-col pt-32 pb-8 px-7 flex-none">
           <motion.div
             initial="hidden" animate="visible" variants={fadeIn}
@@ -84,7 +84,6 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Product bottle — lower portion, centered and elegantly framed */}
         <div className="relative z-10 flex-1 flex items-end justify-center min-h-[45vw] pb-0">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -92,7 +91,6 @@ export default function Home() {
             transition={{ duration: 1.4, ease: "easeOut", delay: 0.5 }}
             className="relative w-[72%] max-w-xs"
           >
-            {/* Fade the bottom of the bottle into the page */}
             <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#080706] to-transparent z-10" />
             <img
               src={productImages.vanillapowder}
@@ -106,10 +104,9 @@ export default function Home() {
 
       {/* ── DESKTOP HERO (md+) ── */}
       <section className="hidden md:flex relative h-[100dvh] w-full overflow-hidden bg-[#080706] items-center">
-        {/* Background texture */}
         <div className="absolute inset-0 z-0">
           <img
-            src={coverImg}
+            src={heroDesktopImg}
             alt=""
             className="w-full h-full object-cover opacity-15 scale-105"
           />
@@ -117,7 +114,6 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#080706] via-transparent to-transparent" />
         </div>
 
-        {/* Product image — right side, editorial */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -132,7 +128,6 @@ export default function Home() {
           />
         </motion.div>
 
-        {/* Text content — left editorial */}
         <div className="relative z-20 flex flex-col px-16 lg:px-24 max-w-3xl">
           <motion.div
             initial="hidden" animate="visible" variants={fadeIn}
@@ -177,7 +172,6 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Scroll line */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
