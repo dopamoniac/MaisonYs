@@ -40,7 +40,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/60 via-[#080706]/30 to-[#080706]" />
         </div>
 
-        <div className="relative z-20 flex flex-col pt-32 pb-8 px-7 flex-none">
+        <div className="relative z-20 flex flex-col pt-32 pb-12 px-7">
           <motion.div
             initial="hidden" animate="visible" variants={fadeIn}
             className="flex items-center gap-3 mb-10"
@@ -81,23 +81,6 @@ export default function Home() {
                 <ArrowRight size={11} />
               </span>
             </Link>
-          </motion.div>
-        </div>
-
-        <div className="relative z-10 flex-1 flex items-end justify-center min-h-[45vw] pb-0">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4, ease: "easeOut", delay: 0.5 }}
-            className="relative w-[72%] max-w-xs"
-          >
-            <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#080706] to-transparent z-10" />
-            <img
-              src={productImages.vanillapowder}
-              alt="Vanilla Powder"
-              className="w-full object-cover object-top"
-              style={{ maxHeight: "52vw" }}
-            />
           </motion.div>
         </div>
       </section>
