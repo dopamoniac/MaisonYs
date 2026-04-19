@@ -34,10 +34,10 @@ export default function Home() {
           <img
             src={heroMobileImg}
             alt=""
-            className="w-full h-full object-cover opacity-5 scale-105"
+            className="w-full h-full object-cover opacity-15 scale-105"
             style={{ objectPosition: "center center" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/60 via-[#080706]/30 to-[#080706]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/35 via-[#080706]/15 to-[#080706]/80" />
         </div>
 
         <div className="relative z-20 flex flex-col pt-32 pb-12 px-7">
