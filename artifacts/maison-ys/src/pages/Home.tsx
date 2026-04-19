@@ -34,7 +34,7 @@ export default function Home() {
           <img
             src={heroMobileImg}
             alt=""
-            className="w-full h-full object-cover opacity-10 scale-110"
+            className="w-full h-full object-cover opacity-5 scale-105"
             style={{ objectPosition: "center center" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/60 via-[#080706]/30 to-[#080706]" />
