@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { coverImg } from "@/lib/images";
-import heroProductImg from "@assets/YS.jpeg";
+import heroProductImg from "@assets/ys.jpeg";
 
 export default function Maison() {
   const fadeUp = {
