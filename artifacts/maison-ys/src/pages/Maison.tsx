@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { coverImg, heroProductImg } from "@/lib/images";
+import { coverImg } from "@/lib/images";
+import heroProductImg from "@assets/YS.jpeg";
 
 export default function Maison() {
   const fadeUp = {
@@ -47,7 +48,9 @@ export default function Maison() {
       {/* Philosophy */}
       <section className="py-32 container mx-auto px-8 max-w-3xl text-center">
         <motion.div
-          initial="hidden" whileInView="visible" viewport={{ once: true }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
           variants={fadeUp}
           className="flex flex-col items-center"
         >
@@ -85,14 +88,25 @@ export default function Maison() {
       <section className="py-32 bg-stone">
         <div className="container mx-auto px-8 max-w-5xl">
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUp}
             className="grid grid-cols-1 md:grid-cols-3 gap-16 text-center"
           >
             {[
-              { title: "Rareté", text: "Chaque fragrance de notre collection est sélectionnée pour son caractère unique et son prestige inégalé." },
-              { title: "Artisanat", text: "Des Extraits de Parfum formulés à la concentration maximale pour une expérience sensorielle d'exception." },
-              { title: "Excellence", text: "Disponible à Nice, Maison YS apporte la haute parfumerie internationale au cœur de la Côte d'Azur." }
+              {
+                title: "Rareté",
+                text: "Chaque fragrance de notre collection est sélectionnée pour son caractère unique et son prestige inégalé."
+              },
+              {
+                title: "Artisanat",
+                text: "Des Extraits de Parfum formulés à la concentration maximale pour une expérience sensorielle d'exception."
+              },
+              {
+                title: "Excellence",
+                text: "Disponible à Nice, Maison YS apporte la haute parfumerie internationale au cœur de la Côte d'Azur."
+              }
             ].map((val, i) => (
               <motion.div
                 key={val.title}
