@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { coverImg } from "@/lib/images";
 import heroProductImg from "@assets/ys.jpeg";
 
 export default function Maison() {
@@ -19,13 +18,19 @@ export default function Maison() {
           transition={{ duration: 1.5 }}
           className="absolute inset-0"
         >
-          <div className="absolute inset-0 bg-obsidian/50 z-10" />
-          <img
-            src={coverImg}
-            alt="Maison YS"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
             className="w-full h-full object-cover scale-95"
             style={{ objectPosition: "center center" }}
-          />
+          >
+            <source src="/logvd.mp4" type="video/mp4" />
+          </video>
+
+          <div className="absolute inset-0 bg-obsidian/50 z-10" />
           <div className="absolute inset-0 bg-gradient-to-t from-stone/30 via-transparent to-transparent z-10" />
         </motion.div>
 
