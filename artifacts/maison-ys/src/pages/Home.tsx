@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import heroDesktopImg from "@assets/abc.jpeg";
-import heroMobileImg from "@assets/abc.jpeg";
-import heroOverlayImg from "@assets/love.jpeg";
+import heroMobileImg from "@assets/abc-mobile.jpeg";
 import { baccaratGiftImg, productImages } from "@/lib/images";
 import { fragrances, collections } from "@/lib/data";
 
@@ -109,8 +108,8 @@ export default function Home() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-[#080706] via-[#080706]/10 to-transparent z-10" />
           <img
-            src={heroOverlayImg}
-            alt="Maison YS"
+            src={productImages.vanillapowder}
+            alt="Vanilla Powder"
             className="w-full h-full object-cover object-center"
           />
         </motion.div>
