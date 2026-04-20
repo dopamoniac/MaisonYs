@@ -7,7 +7,7 @@ import baccaratImg from "@assets/E3D6CE86-C2F1-446F-9FFA-72F6598EDA39_1776563996
 import roseVanilleImg from "@assets/9F9A9EE0-5040-4EF7-9F98-6095D8A188C7_1776563996030.jpeg";
 import vanillaPowderImg from "@assets/9BE9A488-755D-4F31-AE25-9DA3E005D6F6_1776563996030.jpeg";
 import sucreImg from "@assets/A52526BD-D657-4534-963F-28407B835180_1776563996030.jpeg";
-import coverImg from "@assets/couveture_fin_1776547222625.png";
+import coverImg from "@assets/abc.jpeg";
 import logoImg from "@assets/logo_transparent_maison_ys.png";
 import baccaratGiftImg from "@assets/bakar_1776546438078.png";
 import gridImg from "@assets/ok_1776546428398.jpeg";
