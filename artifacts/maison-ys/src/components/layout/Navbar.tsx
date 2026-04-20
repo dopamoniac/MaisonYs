@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${navbarBg}`}>
-      <div className="container mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-6 h-24 flex items-center justify-between">
 
         {/* Logo — transparent PNG, full brand mark */}
         <Link href="/">
@@ -39,7 +39,7 @@ export default function Navbar() {
             <img
               src={logoImg}
               alt="Maison YS"
-              className="h-14 w-auto object-contain transition-all duration-700 group-hover:scale-105 drop-shadow-sm"
+              className="h-20 lg:h-24 w-auto object-contain transition-all duration-700 group-hover:scale-105 drop-shadow-sm"
             />
           </div>
         </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden fixed inset-0 top-20 bg-obsidian z-40 flex flex-col items-center justify-center gap-10"
+            className="md:hidden fixed inset-0 top-24 bg-obsidian z-40 flex flex-col items-center justify-center gap-10"
           >
             <img src={logoImg} alt="Maison YS" className="h-24 w-auto object-contain mb-6 opacity-80" />
             {navLinks.map((link) => (

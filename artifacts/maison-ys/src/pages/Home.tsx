@@ -34,15 +34,17 @@ export default function Home() {
           <img
             src={heroMobileImg}
             alt=""
-            className="w-full h-full object-cover opacity-[0.30] scale-105"
-            style={{ objectPosition: "center center" }}
+            className="w-full h-full object-cover opacity-[0.30] scale-100"
+            style={{ objectPosition: "center top" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#080706]/35 via-[#080706]/15 to-[#080706]/80" />
         </div>
 
         <div className="relative z-20 flex flex-col pt-32 pb-12 px-7">
           <motion.div
-            initial="hidden" animate="visible" variants={fadeIn}
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
             className="flex items-center gap-3 mb-10"
           >
             <div className="w-6 h-px bg-gold/60" />
@@ -58,7 +60,7 @@ export default function Home() {
             className="text-stone font-serif leading-[1.05] tracking-wide uppercase mb-5"
             style={{ fontSize: "clamp(2.6rem, 12vw, 4rem)" }}
           >
-            Rare par<br/>nature.
+            Rare par<br />nature.
           </motion.h1>
 
           <motion.p
@@ -91,7 +93,8 @@ export default function Home() {
           <img
             src={heroDesktopImg}
             alt=""
-            className="w-full h-full object-cover opacity-15 scale-105"
+            className="w-full h-full object-cover opacity-15 scale-100"
+            style={{ objectPosition: "center 20%" }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#080706] via-[#080706]/80 to-[#080706]/40" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#080706] via-transparent to-transparent" />
@@ -113,7 +116,9 @@ export default function Home() {
 
         <div className="relative z-20 flex flex-col px-16 lg:px-24 max-w-3xl">
           <motion.div
-            initial="hidden" animate="visible" variants={fadeIn}
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
             className="flex items-center gap-4 mb-20"
           >
             <div className="w-8 h-px bg-gold/60" />
@@ -129,7 +134,7 @@ export default function Home() {
             className="text-stone font-serif leading-none tracking-widest uppercase mb-6"
             style={{ fontSize: "clamp(3rem, 5.5vw, 5rem)" }}
           >
-            Rare par<br/>nature.
+            Rare par<br />nature.
           </motion.h1>
 
           <motion.p
@@ -169,14 +174,16 @@ export default function Home() {
       <section className="py-40 bg-stone w-full">
         <div className="container mx-auto px-8 text-center max-w-2xl">
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUp}
             className="flex flex-col items-center"
           >
             <div className="w-px h-20 bg-gold/40 mb-16" />
             <p className="text-obsidian/40 tracking-[0.3em] uppercase text-xs mb-8">La Maison</p>
             <h2 className="text-obsidian text-2xl md:text-4xl font-serif leading-relaxed mb-10">
-              « L'art de l'invisible.<br/>Le don de la présence. »
+              « L'art de l'invisible.<br />Le don de la présence. »
             </h2>
             <p className="text-obsidian/55 tracking-widest uppercase text-xs leading-loose max-w-sm">
               Des extraits de parfum rares, élaborés pour ceux qui comprennent la différence entre porter un parfum et incarner une présence.
@@ -189,7 +196,9 @@ export default function Home() {
       <section className="py-32 bg-obsidian text-stone w-full">
         <div className="container mx-auto px-8 max-w-7xl">
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUp}
             className="flex flex-col md:flex-row justify-between items-end mb-20 gap-4"
           >
@@ -242,7 +251,9 @@ export default function Home() {
       <section className="py-32 bg-stone">
         <div className="container mx-auto px-8 max-w-7xl">
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUp}
             className="text-center mb-20"
           >
@@ -292,12 +303,14 @@ export default function Home() {
         <div className="container mx-auto px-8 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <motion.div
-              initial="hidden" whileInView="visible" viewport={{ once: true }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               variants={fadeUp}
             >
               <p className="text-gold/60 tracking-[0.3em] uppercase text-xs mb-6">Offrir la distinction</p>
               <h3 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">
-                Le Don de la<br/>Pure Opulence
+                Le Don de la<br />Pure Opulence
               </h3>
               <p className="text-stone/50 leading-relaxed mb-12 max-w-sm text-sm">
                 Encaissés dans des textures de marbre sombre et signés de notre sceau doré, nos coffrets transforment l'acte d'offrir en rituel inoubliable.
@@ -331,13 +344,15 @@ export default function Home() {
       <section className="py-40 bg-stone text-obsidian text-center">
         <div className="container mx-auto px-8 max-w-xl">
           <motion.div
-            initial="hidden" whileInView="visible" viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             variants={fadeUp}
             className="flex flex-col items-center"
           >
             <div className="w-px h-16 bg-gold/40 mb-16" />
             <h2 className="text-2xl md:text-4xl font-serif mb-12 leading-relaxed">
-              Votre signature olfactive<br/>vous attend.
+              Votre signature olfactive<br />vous attend.
             </h2>
             <Link href="/collection">
               <span className="inline-flex items-center gap-5 text-xs tracking-[0.25em] uppercase bg-obsidian text-stone px-10 py-4 hover:bg-gold hover:text-obsidian transition-all duration-700 cursor-pointer">
