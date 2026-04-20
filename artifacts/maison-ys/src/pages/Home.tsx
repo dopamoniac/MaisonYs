@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import heroDesktopImg from "@assets/abc.jpeg";
 import heroMobileImg from "@assets/abc.jpeg";
-import heroOverlayImg from "@assets/abc.jpeg";
+import heroOverlayImg from "@assets/love.jpeg";
 import { baccaratGiftImg, productImages } from "@/lib/images";
 import { fragrances, collections } from "@/lib/data";
 
